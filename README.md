@@ -67,7 +67,7 @@ The application consists of several pages:
 - **Add Plant Page**: `addplant.html`
 - **Plant List Page**: `listplants.html`
 
-## FrontEnd1
+## FrontEnd
 
 The FrontEnd encompasses all aspects of the website's interface, beginning with the homepage, which introduces the application. From the homepage and all other pages, there is a main header showing the philosophy and style of the site, as well as a secondary navigation bar containing different buttons to access the various pages. Among them are "Our Roots," which describes the company's origins, "Your Plant List" to view the full list of plants, "Add Your Plants" to add a plant to the application, and "Contact Us" for support in case of questions or problems.
 
@@ -78,6 +78,26 @@ The "Your Plant List" page offers a comprehensive overview of all registered pla
 The "Plant Details" page provides in-depth information about individual plants, supplemented with real-time data from sensors. This page retrieves the plant's basic information through a GET request to the plant API and gathers environmental data such as humidity, temperature, and luminosity from another sensor-specific API endpoint. The data is displayed in an intuitive format, allowing users to monitor and assess their plant's conditions effectively.
 
 ## Embedded
+We used 2 sensors : DHT22 (temperature and humidity sensor) and TEMT6000 (light sensor).
+Then we connected them to the ESP32 microcontroller and the power supply. 
+
+### Connections
+
+For the DHT22, we connected the pin 2 of it to the pin 22 of the microcontroller.
+The ground was connected to the pin supposed to (the 4th one) and same for the power supply (the second)
+For the light sensor, the pin SIG is plug to the pin A1 of the microcontroller.
+You can see an image of the connections. 
+
+### Data management 
+
+With an Arduino file, we then collected the sensors data and send them via HTTP request to our API. 
+Thus, you can see the data we collected on the plant named "Bruno", so please do not delete it !
+For the 2 other plants, the data is fake, to see if the other parts of frontend would work. 
+
+We encountered a problem when re-using the data from the sensors in the API because of the backend, so we tried to compensate it on the frontend part : 
+with a manual handling on the api console, we first change the "PLANT_ID linked to the data we collected to the id of Bruno, and then we could use the sensor's data in the page "plant.html" with javascript commands. 
+If you run the Arduino code, be careful to quickly disconnect the powersupply and the Wi-Fi because it will continue to send requests if you do not do this. 
+
 
 ## Android
 
