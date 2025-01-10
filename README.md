@@ -2,7 +2,7 @@
 
 ## Introduction
 
-SmartPlant is a plant management application that allows you to monitor and care for your indoor plants. The application uses sensors to measure temperature and humidity, sending this data to a backend system, which stores plant information and sensor readings in a database.
+SmartPlant is a plant management application that allows you to monitor and care for your indoor plants. The application uses sensors to measure temperature, humidity and luminosity, sending this data to a backend system, which stores plant information and sensor readings in a database.
 
 ### Key Features:
 - **Frontend**: User interface to manage plants.
