@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SmartPlant</string>
+    <string name="app_logo_description">Smartplant logo</string>
+    <string name="app_main_welcome">Your mobile assistant that helps you take care of your beloved plants</string>
+    <string name="act_main_fill_name">Fill a name</string>
+    <string name="act_main_open">Open</string>
+    <string name="act_plant_name">Plant name</string>
+    <string name="act_plant_none">No plant found for this id or name</string>
+    <string name="act_plant_current_humidity">Current humidity</string>
+    <string name="act_plant_current_enlightment">Current enlightment</string>
+    <string name="act_plant_current_temperature">Current temperature</string>
+    <string name="app_go_back_description">Go back</string>
+    <string name="app_go_plant_description">Plants</string>
+    <string name="water_it"> Water your plant !</string>
+    <string name="drowned_it"> For your plant\'s sake please stop drowning it !</string>
+    <string name="plant_fine"> Your plant is fine !</string>
+    <string name="app_go_plantlist"> You will be directed to the plants list</string>
+    <string name="app_menu"> The app navigation menu </string>
+
+
+</resources>
