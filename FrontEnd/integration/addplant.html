@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Plant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet" />
+  <link href="assets/stylesheets/output.css" rel="stylesheet" />
+</head>
+<body>
+<!-- Bandeau principal -->
+  <header class="header">
+    <img src="assets/img/plantes-gauche.png" alt="Left Image">
+
+    <div class="logo-container">
+      <img src="assets/img/logosansfond.png" alt="SmartPlant Logo">
+    </div>
+
+    <img src="assets/img/plantes-droite.png" alt="Right Image">
+  </header>
+
+  <!-- Sous-bandeau -->
+  <nav>
+    <a href="index.html" class="sub-header-link">Home</a>
+    <a href="about.html" class="sub-header-link">Our Roots</a>
+    <a href="listplants.html" class="sub-header-link">Plant List</a>
+    <a href="addplant.html" class="sub-header-link">Add Your Plant</a>
+    <a href="contact.html" class="sub-header-link">Contact Us</a>
+  </nav>
+
+  <!-- Page Ajouter une Plante -->
+  <main class="main-add-plant">
+    <h1 class="add-plant-title">Add a New Plant</h1>
+
+    <form class="add-plant-form" action="/api/add-plant" method="POST">
+      <!-- Nom de la plante -->
+      <div class="form-group">
+        <label for="plant-name">Plant Name:</label>
+        <input type="text" id="plant-name" name="name" placeholder="Enter the plant name" required>
+      </div>
+
+      <!-- Type de plante -->
+      <div class="form-group">
+        <label for="plant-type">Type:</label>
+        <select id="plant-type" name="type" required>
+          <option value="" disabled selected>Select plant type</option>
+        </select>
+      </div>
+
+      <!-- Bouton de soumission -->
+      <div class="form-group">
+        <button type="submit" class="submit-btn">Add Plant</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 SmartPlant. All rights reserved.</p>
+  </footer>
+  <script src="js/addplant.js"></script>
+
+</body>
+</html>

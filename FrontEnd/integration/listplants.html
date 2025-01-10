@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Plants</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet" />
+  <link href="assets/stylesheets/output.css" rel="stylesheet" />
+</head>
+<body>
+<!-- Bandeau principal -->
+<header class="header">
+  <img src="assets/img/plantes-gauche.png" alt="Left Image">
+
+  <div class="logo-container">
+    <img src="assets/img/logosansfond.png" alt="SmartPlant Logo">
+  </div>
+
+  <img src="assets/img/plantes-droite.png" alt="Right Image">
+</header>
+
+<!-- Sous-bandeau -->
+<nav>
+  <a href="index.html" class="sub-header-link">Home</a>
+  <a href="about.html" class="sub-header-link">Our Roots</a>
+  <a href="listplants.html" class="sub-header-link">Plant List</a>
+  <a href="addplant.html" class="sub-header-link">Add Your Plant</a>
+  <a href="contact.html" class="sub-header-link">Contact Us</a>
+</nav>
+
+<!-- Section Liste des Plantes -->
+<main class="plant-list-container">
+  <h1 class="page-title">Your Plants</h1>
+  <!-- Conteneur de la section avec images et liste -->
+  <div class="plants-wrapper">
+    <img src="assets/img/icones.png" alt="icones de plantes" class="plant-image-left">
+
+    <div class="plant-list-wrapper">
+      <ul class="plant-list" id="plant-list">
+      <!-- Plantes statiques pour le moment -->
+        <li class="plant-item">
+          <a href="plant-details.html?plant_id=1">Aloe Vera</a>
+        </li>
+        <li class="plant-item">
+          <a href="plant-details.html?plant_id=2">Bamboo Palm</a>
+        </li>
+        <li class="plant-item">
+          <a href="plant-details.html?plant_id=3">Snake Plant</a>
+        </li>
+        <li class="plant-item">
+          <a href="plant-details.html?plant_id=4">Spider Plant</a>
+        </li>
+      <!--------------- Plantes statiques pour le moment ---------------------------------------------->
+      </ul>
+    </div>
+
+    <img src="assets/img/icones2.png" alt="icones de plantes" class="plant-image-right">
+  </div>
+</main>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 SmartPlant. All rights reserved.</p>
+</footer>
+<script src="js/plantdisplay.js"></script>
+<script src="js/list-plant.js"></script>
+<script src="js/addplant.js"></script>
+</body>
+</html>

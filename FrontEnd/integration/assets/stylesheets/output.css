@@ -1,0 +1,458 @@
+@charset "UTF-8";
+/* Styles généraux */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; }
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d5f5d1;
+  padding: 10px 20px;
+  height: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+
+.header img {
+  height: 120px;
+  width: auto; }
+
+.header .logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; }
+
+/* Sous-bandeau */
+nav {
+  background-color: #3a7d3a;
+  /* Vert plus sombre */
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  /* Centrer les liens horizontalement */
+  gap: 20px; }
+
+nav a {
+  color: white;
+  font-size: 1.1em;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s; }
+
+nav a:hover {
+  color: #e8f5e9;
+  /* Vert plus clair pour le survol */ }
+
+/* Section Accueil */
+.main-home {
+  text-align: center;
+  padding: 0 20px;
+  background-color: #d5f5d1;
+  /* Arrière-plan vert clair */ }
+
+.welcome1 {
+  font-size: 3em;
+  margin: 20px 0;
+  color: #3a7d3a;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
+
+.welcome2 {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #3a7d3a;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+  padding: 20px; }
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 70px;
+  background-color: #3a7d3a;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s; }
+
+.link:hover {
+  transform: scale(1.1);
+  background-color: #77b377;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); }
+
+.images-container {
+  display: flex;
+  justify-content: space-between; }
+
+.images-container img {
+  width: 45%;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 10px; }
+
+/* Style pour le logo centré sous le menu */
+.logo-home {
+  display: block;
+  /* S'assure que le logo prend toute la largeur disponible */
+  margin: 20px auto;
+  /* Centre le logo horizontalement et ajoute une marge au-dessus et en dessous */
+  max-width: 200px;
+  /* Limite la taille du logo */
+  height: auto;
+  /* Conserve le ratio d'aspect de l'image */
+  border-radius: 15px;
+  /* Optionnel : ajoute des coins arrondis */ }
+
+/* Section principale avec les 4 rubriques */
+.sections {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px; }
+
+.section {
+  background-color: #f0f8f0;
+  /* Fond léger pour chaque section */
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.1em;
+  color: #333; }
+
+.section a {
+  color: #388e3c;
+  font-weight: bold;
+  text-decoration: none; }
+
+.section a:hover {
+  text-decoration: underline; }
+
+/* Section About */
+.main-about {
+  background: linear-gradient(to bottom, #ffffff, #e8f5e9);
+  padding: 10px 0 0 0; }
+
+.about-header h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #3a7d3a;
+  margin-bottom: 30px;
+  text-align: center;
+  /* Centrer le titre */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 30px 20px;
+  /* Ajoute des marges autour de la section */
+  align-items: center;
+                        /* Centre le contenu en hauteur
+padding:10px;*/ }
+
+.content {
+  padding: 20px;
+  max-width: 60%;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #4a4a4a; }
+
+/* Image */
+.about-image {
+  max-width: 35%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover; }
+
+/* Section Contact */
+.main-contact {
+  padding: 10px 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, #ffffff, #e8f5e9); }
+
+.main-contact h1 {
+  font-size: 2.5em;
+  color: #3a7d3a;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); }
+
+.contact-details {
+  font-size: 1.2em;
+  line-height: 1.8;
+  color: #4a4a4a;
+  max-width: 800px;
+  margin: 0 auto; }
+
+.contact-details ul {
+  list-style-type: none;
+  padding: 0; }
+
+.contact-details li {
+  margin-bottom: 10px; }
+
+.contact-details strong {
+  font-weight: bold;
+  color: #3a7d3a; }
+
+/* Section Add Plant */
+.main-add-plant {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; }
+
+.add-plant-title {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #3a7d3a;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
+
+.add-plant-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; }
+
+.form-group {
+  display: flex;
+  flex-direction: column; }
+
+label {
+  font-size: 1.1em;
+  color: #3a7d3a;
+  margin-bottom: 5px; }
+
+input, textarea, select {
+  font-size: 1em;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s; }
+
+input:focus, textarea:focus, select:focus {
+  border-color: #3a7d3a;
+  box-shadow: 0 2px 6px rgba(58, 125, 58, 0.2); }
+
+.submit-btn {
+  font-size: 1.1em;
+  padding: 10px 20px;
+  background-color: #3a7d3a;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; }
+
+.submit-btn:hover {
+  background-color: #77b377;
+  transform: scale(1.05); }
+
+/* Section Liste des Plantes */
+.plant-list-container {
+  padding: 10px;
+  text-align: center;
+  background: linear-gradient(to bottom, #ffffff, #e8f5e9); }
+
+.page-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #3a7d3a;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  text-align: center; }
+
+.plants-wrapper {
+  display: flex;
+  align-items: center;
+  /* Aligner verticalement au centre */
+  justify-content: space-between;
+  /* Espacement égal entre les éléments */
+  gap: 10px;
+  /* Espacement entre les éléments */
+  max-width: 1200px;
+  /* Limite la largeur totale pour que ce soit plus esthétique */
+  margin: 0 auto;
+  /* Centrer le tout */
+  flex-wrap: wrap;
+  /* Permet de s'adapter aux petits écrans */ }
+
+.plant-image-left {
+  flex: 1;
+  /* Les images prennent 1 fraction de l'espace */
+  max-width: 400px;
+  /* Limite la taille des images */
+  width: 100%;
+  /* Les images prennent 100% de la largeur de leur conteneur */
+  border-radius: 10px;
+  object-fit: cover;
+  /* Assure-toi que l'image soit bien découpée */ }
+
+.plant-image-right {
+  flex: 1;
+  /* Les images prennent 1 fraction de l'espace */
+  max-width: 360px;
+  /* Limite la taille des images */
+  width: 100%;
+  /* Les images prennent 100% de la largeur de leur conteneur */
+  border-radius: 10px;
+  object-fit: cover;
+  /* Assure-toi que l'image soit bien découpée */ }
+
+.plant-list-wrapper {
+  flex: 2;
+  /* La liste prend plus de place */
+  max-width: 400px;
+  /* Limite la largeur de la liste */
+  list-style-type: none;
+  padding: 0; }
+
+.plant-item {
+  margin: 20px 0;
+  font-size: 1.2em; }
+
+.plant-item a {
+  text-decoration: none;
+  color: #388e3c;
+  font-weight: bold;
+  transition: color 0.3s; }
+
+.plant-item a:hover {
+  color: #2c6d2c;
+  text-decoration: underline; }
+
+/*Ajout de bouton de retour*/
+.back-button-container {
+  margin: 1em; }
+
+.back-button {
+  text-decoration: none;
+  color: #3a7d3a;
+  font-size: 1.2em;
+  font-weight: bold; }
+
+.back-button:hover {
+  text-decoration: underline; }
+
+/*delete plant*/
+.delete-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; }
+
+.delete-btn {
+  background-color: #e74c3c;
+  /* Couleur de fond rouge pour la suppression */
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; }
+
+.delete-btn::before {
+  content: '\f1f8';
+  /* Code de l'icône de poubelle de Font Awesome */
+  font-family: 'Font Awesome 5 Free';
+  /* Assurez-vous d'inclure Font Awesome dans votre projet */
+  font-weight: 900;
+  margin-right: 10px;
+  /* Espace entre l'icône et le texte */
+  font-size: 18px; }
+
+.delete-btn:hover {
+  background-color: #c0392b;
+  /* Couleur plus sombre pour l'effet de survol */
+  transform: scale(1.1);
+  /* Légère augmentation de la taille du bouton */ }
+
+.delete-btn:active {
+  background-color: #e74c3c;
+  /* Couleur de fond originale lors du clic */
+  transform: scale(0.95);
+  /* Réduction de la taille lors du clic */ }
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #555;
+  font-size: 0.9em; }
+
+footer a {
+  color: #3a7d3a;
+  text-decoration: none;
+  font-weight: bold; }
+
+footer a:hover {
+  text-decoration: underline; }
+
+.body-color {
+  background-color: #d5f5d1;
+  /* Arrière-plan vert clair */ }
+
+a {
+  text-decoration: inherit;
+  color: inherit; }
+
+/* Section Détails de la Plante */
+.main-plant-details {
+  background: #e6f7e1;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 20px auto; }
+
+.plant-title {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #3a7d3a;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
+
+.plant-content {
+  display: flex;
+  gap: 20px; }
+
+.plant-icone {
+  flex: 1;
+  /* Prend 1/3 de l'espace */ }
+
+.plant-icone img {
+  width: 100%;
+  border-radius: 10px; }
+
+.plant-info {
+  flex: 2;
+  /* Prend 2/3 de l'espace */
+  padding: 10px;
+  font-size: 1.1em;
+  color: #4a4a4a;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+
+/*# sourceMappingURL=output.css.map */

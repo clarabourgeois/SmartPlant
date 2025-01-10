@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Details</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet" />
+  <!-- Inclure Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="assets/stylesheets/output.css" rel="stylesheet" />
+</head>
+
+<body>
+<!-- Bandeau principal -->
+<header class="header">
+  <img src="assets/img/plantes-gauche.png" alt="Left Image">
+
+  <div class="logo-container">
+    <img src="assets/img/logosansfond.png" alt="SmartPlant Logo">
+  </div>
+
+  <img src="assets/img/plantes-droite.png" alt="Right Image">
+</header>
+
+<!-- Sous-bandeau -->
+<nav>
+  <a href="index.html" class="sub-header-link">Home</a>
+  <a href="about.html" class="sub-header-link">Our Roots</a>
+  <a href="listplants.html" class="sub-header-link">Plant List</a>
+  <a href="addplant.html" class="sub-header-link">Add Your Plant</a>
+  <a href="contact.html" class="sub-header-link">Contact Us</a>
+</nav>
+
+<!-- Bouton pour revenir à la page précédente -->
+<div class="back-button-container">
+  <a href="listplants.html" class="back-button">
+    &#8592; Back to Plant List
+  </a>
+</div>
+
+
+<!-- Page Détails de la Plante -->
+<main class="main-plant-details">
+  <h1 class="plant-title" id="plant-name">Plant Name</h1>
+
+  <div class="plant-content">
+    <!-- Image de la plante -->
+    <div class="plant-icone">
+      <img id="plant-image" src="assets/img/plant-icone.png" alt="Plant Image">
+    </div>
+
+    <!-- Informations sur la plante -->
+    <div class="plant-info">
+      <p><strong>Type:</strong> <span id="plant-type">Default Type</span></p>
+      <p><strong>Temperature:</strong> <span id="plant-temperature">Default Temperature</span></p>
+      <p><strong>Humidity:</strong> <span id="plant-humidity">Default Humidity</span></p>
+      <p><strong>Luminosity:</strong> <span id="plant-luminosity">Default Luminosity</span></p>
+      <p id="temperature-message"></p>
+      <p id="humidity-message"></p>
+    </div>
+  </div>
+</main>
+
+<!-- Bouton de suppression -->
+<div class="delete-button-container">
+  <button id="delete-plant-btn" class="delete-btn">
+    <span>Delete This Plant</span>
+  </button>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 SmartPlant. All rights reserved.</p>
+</footer>
+
+<script src="js/deleteplant.js"></script>
+<script src="js/sensor-display.js"></script>
+</body>
+</html>
